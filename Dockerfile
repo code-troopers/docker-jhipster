@@ -46,5 +46,6 @@ RUN echo 'root:jhipster' |chpasswd && \
 
 USER jhipster
 VOLUME ["/home/jhipster"]
+WORKDIR /home/jhipster
 EXPOSE 8080 3000 3001 22
 CMD ["/usr/sbin/sshd", "-D"]
