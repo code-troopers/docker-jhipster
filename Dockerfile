@@ -3,7 +3,7 @@ FROM debian:8
 MAINTAINER Cedric Gatay "c.gatay@code-troopers.com"
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install -y -q git curl sudo openssh-server zip bzip fontconfig vim && \
+RUN apt-get update && apt-get install -y -q git curl sudo openssh-server zip bzip2 fontconfig vim && \
     mkdir /var/run/sshd && \
     apt-get clean && \
     rm -rf /var/lib/dpkg/info/* && \
